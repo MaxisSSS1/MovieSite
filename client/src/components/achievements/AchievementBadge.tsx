@@ -26,7 +26,7 @@ export default function AchievementBadge({
   return (
     <div className="achievement-badge flex flex-col items-center">
       <div className={`${sizeClasses[size]} ${achievement.isLocked ? 'bg-[#282828]/50' : 'bg-[#282828]'} rounded-full flex items-center justify-center mb-2`}>
-        <i className={`${achievement.icon} ${iconSize[size]} ${achievement.isLocked ? 'text-[#B3B3B3]' : 'text-[#64EEBC]'}`}></i>
+        <i className={`${achievement.icon} ${iconSize[size]} ${achievement.isLocked ? 'text-[#B3B3B3]' : 'text-[#FFC107]'}`}></i>
       </div>
       <span className={`text-xs text-center ${achievement.isLocked ? 'text-[#B3B3B3]' : 'text-white'}`}>
         {achievement.name}

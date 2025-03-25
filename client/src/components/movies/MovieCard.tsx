@@ -75,7 +75,7 @@ export function ContinueWatchingCard({
         <div className="flex justify-between items-center mt-1">
           <span className="text-[#B3B3B3] text-xs">{percentComplete}% complete</span>
           <button 
-            className="text-[#3CAEFF] hover:text-[#3CAEFF]/80"
+            className="text-[#3071FF] hover:text-[#3071FF]/80"
             onClick={onPlay}
           >
             <i className="ri-play-fill"></i>

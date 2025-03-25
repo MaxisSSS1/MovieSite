@@ -43,7 +43,7 @@ export default function HeroSection() {
           </p>
           <div className="flex mt-4 space-x-3">
             <Link href={`/movie/${movie.id}`}>
-              <a className="bg-[#E50914] hover:bg-[#E50914]/90 text-white font-semibold py-2 px-6 rounded-full flex items-center transition duration-200">
+              <a className="bg-[#3071FF] hover:bg-[#3071FF]/90 text-white font-semibold py-2 px-6 rounded-full flex items-center transition duration-200">
                 <i className="ri-play-fill mr-2"></i> Watch Now
               </a>
             </Link>
