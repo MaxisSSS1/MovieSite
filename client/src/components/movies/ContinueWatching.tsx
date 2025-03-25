@@ -37,11 +37,11 @@ export default function ContinueWatching() {
           <h2 className="text-xl font-semibold font-poppins">Continue Watching</h2>
         </div>
         <div className="bg-[#1E1E1E] rounded-lg p-6 text-center">
-          <i className="ri-film-line text-4xl text-[#3CAEFF] mb-3"></i>
+          <i className="ri-film-line text-4xl text-[#3071FF] mb-3"></i>
           <h3 className="font-medium mb-2">No movies in progress</h3>
           <p className="text-[#B3B3B3] text-sm mb-4">Start watching a movie to see it here</p>
           <Link href="/discover">
-            <a className="inline-block bg-[#3CAEFF] hover:bg-[#3CAEFF]/90 text-white font-medium py-2 px-4 rounded-md transition">
+            <a className="inline-block bg-[#3071FF] hover:bg-[#3071FF]/90 text-white font-medium py-2 px-4 rounded-md transition">
               Browse Movies
             </a>
           </Link>
@@ -57,7 +57,7 @@ export default function ContinueWatching() {
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-xl font-semibold font-poppins">Continue Watching</h2>
         <Link href="/discover">
-          <a className="text-[#3CAEFF] hover:text-[#3CAEFF]/80 text-sm font-medium">View All</a>
+          <a className="text-[#3071FF] hover:text-[#3071FF]/80 text-sm font-medium">View All</a>
         </Link>
       </div>
       

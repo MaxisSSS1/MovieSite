@@ -131,7 +131,7 @@ export default function MoodSelector() {
                     alt={movie.title}
                     className="w-full h-56 md:h-64 object-cover"
                   />
-                  <div className="absolute top-2 right-2 bg-[#3CAEFF] text-[#121212] text-xs font-bold px-2 py-1 rounded">
+                  <div className="absolute top-2 right-2 bg-[#FFC107] text-[#121212] text-xs font-bold px-2 py-1 rounded">
                     {movie.score / 10}
                   </div>
                 </div>
@@ -139,7 +139,7 @@ export default function MoodSelector() {
                   <h3 className="font-medium text-sm">{movie.title}</h3>
                   <div className="flex justify-between items-center mt-1">
                     <span className="text-[#B3B3B3] text-xs">{movie.genres.slice(0, 2).join(', ')}</span>
-                    <button className="text-[#3CAEFF] hover:text-[#3CAEFF]/80">
+                    <button className="text-[#3071FF] hover:text-[#3071FF]/80">
                       <i className="ri-add-line"></i>
                     </button>
                   </div>
