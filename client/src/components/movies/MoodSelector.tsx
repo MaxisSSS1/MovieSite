@@ -83,11 +83,11 @@ export default function MoodSelector() {
               htmlFor={`mood-${mood.id}`} 
               className={`block text-center p-4 border-2 rounded-xl cursor-pointer hover:bg-[#282828]/50 transition ${
                 selectedMood === mood.id 
-                  ? 'border-[#3CAEFF] bg-[#3CAEFF]/10' 
+                  ? 'border-[#3071FF] bg-[#3071FF]/10' 
                   : 'border-[#282828]'
               }`}
             >
-              <i className={`${mood.icon} text-3xl text-[#3CAEFF] mb-2`}></i>
+              <i className={`${mood.icon} text-3xl text-[#FFC107] mb-2`}></i>
               <span className="block text-sm">{mood.name}</span>
             </label>
           </div>
@@ -96,7 +96,7 @@ export default function MoodSelector() {
       
       <div className="p-4 bg-[#282828] rounded-xl flex items-center justify-between">
         <div>
-          <p className="text-[#3CAEFF] font-medium">
+          <p className="text-[#3071FF] font-medium">
             {selectedMood 
               ? `Recommended for ${moods.find(m => m.id === selectedMood)?.name}` 
               : 'Recommended for your current mood'
@@ -109,8 +109,8 @@ export default function MoodSelector() {
           </p>
         </div>
         <button 
-          className={`bg-[#3CAEFF] text-white font-semibold py-2 px-4 rounded-lg transition duration-200 ${
-            !selectedMood || isLoading ? 'opacity-50 cursor-not-allowed' : 'hover:bg-[#3CAEFF]/90'
+          className={`bg-[#3071FF] text-white font-semibold py-2 px-4 rounded-lg transition duration-200 ${
+            !selectedMood || isLoading ? 'opacity-50 cursor-not-allowed' : 'hover:bg-[#3071FF]/90'
           }`}
           onClick={getRecommendations}
           disabled={!selectedMood || isLoading}

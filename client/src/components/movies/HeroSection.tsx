@@ -36,7 +36,7 @@ export default function HeroSection() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#121212] via-[#121212]/80 to-transparent"></div>
         <div className="absolute bottom-0 left-0 p-4 md:p-8">
-          <span className="bg-[#E50914] text-white text-xs font-semibold px-2 py-1 rounded">NEW RELEASE</span>
+          <span className="bg-[#FFC107] text-black text-xs font-semibold px-2 py-1 rounded">NEW RELEASE</span>
           <h2 className="text-2xl md:text-4xl font-bold mt-2 text-white font-poppins">{movie.title}</h2>
           <p className="text-[#B3B3B3] mt-1 md:mt-2 text-sm md:text-base max-w-xl">
             {movie.description}

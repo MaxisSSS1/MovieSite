@@ -38,7 +38,7 @@ export default function SharedViewingSection() {
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-xl font-semibold font-poppins">Shared Viewings</h2>
           <Link href="/shared">
-            <a className="text-[#3CAEFF] hover:text-[#3CAEFF]/80 text-sm font-medium">View All</a>
+            <a className="text-[#3071FF] hover:text-[#3071FF]/80 text-sm font-medium">View All</a>
           </Link>
         </div>
         
@@ -59,17 +59,17 @@ export default function SharedViewingSection() {
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-xl font-semibold font-poppins">Shared Viewings</h2>
           <Link href="/shared">
-            <a className="text-[#3CAEFF] hover:text-[#3CAEFF]/80 text-sm font-medium">View All</a>
+            <a className="text-[#3071FF] hover:text-[#3071FF]/80 text-sm font-medium">View All</a>
           </Link>
         </div>
         
         <div className="bg-[#1E1E1E] rounded-xl p-4">
           <div className="p-6 text-center">
-            <i className="ri-group-line text-4xl text-[#3CAEFF] mb-3"></i>
+            <i className="ri-group-line text-4xl text-[#3071FF] mb-3"></i>
             <h3 className="font-medium mb-2">No shared viewings available</h3>
             <p className="text-[#B3B3B3] text-sm mb-4">Join or create a shared viewing to watch movies with friends</p>
             <Link href="/shared/create">
-              <a className="inline-block bg-[#3CAEFF] hover:bg-[#3CAEFF]/90 text-white font-medium py-2 px-4 rounded-md transition">
+              <a className="inline-block bg-[#3071FF] hover:bg-[#3071FF]/90 text-white font-medium py-2 px-4 rounded-md transition">
                 Create Shared Viewing
               </a>
             </Link>
@@ -84,7 +84,7 @@ export default function SharedViewingSection() {
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-xl font-semibold font-poppins">Shared Viewings</h2>
         <Link href="/shared">
-          <a className="text-[#3CAEFF] hover:text-[#3CAEFF]/80 text-sm font-medium">View All</a>
+          <a className="text-[#3071FF] hover:text-[#3071FF]/80 text-sm font-medium">View All</a>
         </Link>
       </div>
       
@@ -92,7 +92,7 @@ export default function SharedViewingSection() {
         <div className="flex items-center justify-between mb-4">
           <h3 className="font-medium">Upcoming Watch Parties</h3>
           <Link href="/shared/create">
-            <a className="text-[#3CAEFF] hover:text-[#3CAEFF]/80 text-sm font-medium flex items-center">
+            <a className="text-[#3071FF] hover:text-[#3071FF]/80 text-sm font-medium flex items-center">
               <i className="ri-add-line mr-1"></i> Create New
             </a>
           </Link>
@@ -118,20 +118,20 @@ export default function SharedViewingSection() {
                 {[...Array(Math.min(4, viewing.participants?.length || 0))].map((_, i) => (
                   <div 
                     key={i} 
-                    className="w-7 h-7 rounded-full bg-[#3CAEFF] border border-[#121212] flex items-center justify-center text-xs font-medium text-[#121212]"
+                    className="w-7 h-7 rounded-full bg-[#3071FF] border border-[#121212] flex items-center justify-center text-xs font-medium text-[#121212]"
                   >
                     U{i+1}
                   </div>
                 ))}
                 {(viewing.participants?.length || 0) > 4 && (
-                  <span className="w-7 h-7 rounded-full bg-[#3CAEFF] text-[#121212] flex items-center justify-center text-xs font-medium border border-[#121212]">
+                  <span className="w-7 h-7 rounded-full bg-[#3071FF] text-[#121212] flex items-center justify-center text-xs font-medium border border-[#121212]">
                     +{viewing.participants!.length - 4}
                   </span>
                 )}
               </div>
               
               <div className="flex mt-4 justify-between">
-                <button className="bg-[#3CAEFF] hover:bg-[#3CAEFF]/90 text-white text-sm font-medium py-1.5 px-4 rounded transition">
+                <button className="bg-[#3071FF] hover:bg-[#3071FF]/90 text-white text-sm font-medium py-1.5 px-4 rounded transition">
                   Join
                 </button>
                 <Link href={`/shared/${viewing.id}`}>
