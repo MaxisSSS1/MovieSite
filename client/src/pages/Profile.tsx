@@ -228,13 +228,13 @@ export default function Profile() {
                               </div>
                               <div className="w-full h-1 bg-[#282828] mt-2">
                                 <div 
-                                  className="h-full bg-[#E50914]" 
+                                  className="h-full bg-[#FFC107]" 
                                   style={{ width: `${Math.round((item.progress / (item.movie.duration * 60)) * 100)}%` }}
                                 ></div>
                               </div>
                             </div>
                             <Link href={`/movie/${item.movie.id}?autoplay=true`}>
-                              <a className="ml-4 w-8 h-8 bg-[#3CAEFF] rounded-full flex items-center justify-center">
+                              <a className="ml-4 w-8 h-8 bg-[#3071FF] rounded-full flex items-center justify-center">
                                 <i className="ri-play-fill text-white"></i>
                               </a>
                             </Link>
@@ -252,7 +252,7 @@ export default function Profile() {
               
               {activeTab === 'history' && (
                 <div className="bg-[#1E1E1E] rounded-lg p-8 text-center">
-                  <i className="ri-history-line text-5xl text-[#3CAEFF] mb-4"></i>
+                  <i className="ri-history-line text-5xl text-[#3071FF] mb-4"></i>
                   <h3 className="text-xl font-medium mb-2">Watch History Coming Soon</h3>
                   <p className="text-[#B3B3B3] max-w-md mx-auto">
                     We're working on a feature to track your complete watch history. Check back soon!
@@ -262,7 +262,7 @@ export default function Profile() {
               
               {activeTab === 'settings' && (
                 <div className="bg-[#1E1E1E] rounded-lg p-8 text-center">
-                  <i className="ri-settings-3-line text-5xl text-[#3CAEFF] mb-4"></i>
+                  <i className="ri-settings-3-line text-5xl text-[#3071FF] mb-4"></i>
                   <h3 className="text-xl font-medium mb-2">Settings Coming Soon</h3>
                   <p className="text-[#B3B3B3] max-w-md mx-auto">
                     Profile settings and customization options will be available in a future update.

@@ -133,7 +133,7 @@ export default function Schedule() {
                 <div className="space-y-3">
                   {data.scheduledViewings.map((viewing) => (
                     <div key={viewing.id} className="flex items-center p-3 bg-[#282828] rounded-lg">
-                      <span className="text-[#E50914] font-medium w-16 text-center">
+                      <span className="text-[#3071FF] font-medium w-16 text-center">
                         {formatTimeAmPm(new Date(viewing.scheduledFor))}
                       </span>
                       <img 
@@ -170,7 +170,7 @@ export default function Schedule() {
           <section className="mb-8">
             <h2 className="text-xl font-semibold font-poppins mb-4">Monthly Calendar</h2>
             <div className="bg-[#1E1E1E] rounded-xl p-4 text-center py-8">
-              <i className="ri-calendar-line text-5xl text-[#3CAEFF] mb-4"></i>
+              <i className="ri-calendar-line text-5xl text-[#3071FF] mb-4"></i>
               <h3 className="text-lg font-medium mb-2">Monthly Calendar View</h3>
               <p className="text-[#B3B3B3] max-w-md mx-auto mb-4">
                 A full calendar view is coming soon! For now, use the date selector above to see your scheduled movies.
@@ -238,7 +238,7 @@ export default function Schedule() {
                 id="isShared" 
                 checked={isShared}
                 onChange={(e) => setIsShared(e.target.checked)}
-                className="rounded bg-[#282828] border-[#3A3A3A] text-[#3CAEFF]"
+                className="rounded bg-[#282828] border-[#3A3A3A] text-[#3071FF]"
               />
               <label htmlFor="isShared" className="text-sm font-medium">Make this a shared viewing</label>
             </div>
@@ -264,7 +264,7 @@ export default function Schedule() {
                 Cancel
               </button>
               <button 
-                className="px-4 py-2 rounded-md bg-[#3CAEFF] text-white hover:bg-[#3CAEFF]/90 disabled:opacity-50"
+                className="px-4 py-2 rounded-md bg-[#3071FF] text-white hover:bg-[#3071FF]/90 disabled:opacity-50"
                 onClick={handleScheduleMovie}
                 disabled={!selectedMovie || scheduleMutation.isPending}
               >
