@@ -60,7 +60,7 @@ export function ContinueWatchingCard({
             />
             <div className="absolute bottom-0 left-0 right-0 h-1 bg-[#282828]">
               <div 
-                className="h-full bg-[#E50914]" 
+                className="h-full bg-[#FFC107]" 
                 style={{ width: `${percentComplete}%` }}
               ></div>
             </div>
