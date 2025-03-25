@@ -71,7 +71,7 @@ export default function AchievementsSection() {
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-xl font-semibold font-poppins">Your Achievements</h2>
           <Link href="/achievements">
-            <a className="text-[#3CAEFF] hover:text-[#3CAEFF]/80 text-sm font-medium">View All</a>
+            <a className="text-[#3071FF] hover:text-[#3071FF]/80 text-sm font-medium">View All</a>
           </Link>
         </div>
         
@@ -89,7 +89,7 @@ export default function AchievementsSection() {
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-xl font-semibold font-poppins">Your Achievements</h2>
         <Link href="/achievements">
-          <a className="text-[#3CAEFF] hover:text-[#3CAEFF]/80 text-sm font-medium">View All</a>
+          <a className="text-[#3071FF] hover:text-[#3071FF]/80 text-sm font-medium">View All</a>
         </Link>
       </div>
       
@@ -97,7 +97,7 @@ export default function AchievementsSection() {
         <div className="mb-4">
           <div className="flex justify-between items-center">
             <div className="flex items-center">
-              <span className="text-[#64EEBC] font-medium">Level {user?.level || 1}</span>
+              <span className="text-[#FFC107] font-medium">Level {user?.level || 1}</span>
               <span className="mx-2 text-[#B3B3B3]">•</span>
               <span className="text-[#B3B3B3] text-sm">{user?.title || "Movie Explorer"}</span>
             </div>
@@ -105,7 +105,7 @@ export default function AchievementsSection() {
           </div>
           <div className="w-full h-2 bg-[#282828] rounded-full mt-2">
             <div 
-              className="h-full bg-[#64EEBC] rounded-full" 
+              className="h-full bg-[#3071FF] rounded-full" 
               style={{ width: `${progress}%` }}
             ></div>
           </div>
