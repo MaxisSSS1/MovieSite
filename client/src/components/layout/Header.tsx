@@ -21,7 +21,7 @@ export function MobileHeader({ title = "MovieMood" }: MobileHeaderProps) {
         </button>
         <button className="p-2 text-white relative">
           <i className="ri-notification-3-line text-xl"></i>
-          <span className="absolute top-1 right-1 w-2 h-2 bg-[#E50914] rounded-full"></span>
+          <span className="absolute top-1 right-1 w-2 h-2 bg-[#FFC107] rounded-full"></span>
         </button>
       </div>
     </header>
@@ -49,7 +49,7 @@ export function DesktopHeader({ title }: DesktopHeaderProps) {
           <input 
             type="search" 
             placeholder="Search for movies..." 
-            className="bg-[#282828] text-[#B3B3B3] py-2 pl-10 pr-4 rounded-full w-64 focus:outline-none focus:ring-1 focus:ring-[#3CAEFF]"
+            className="bg-[#282828] text-[#B3B3B3] py-2 pl-10 pr-4 rounded-full w-64 focus:outline-none focus:ring-1 focus:ring-[#3071FF]"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
@@ -57,7 +57,7 @@ export function DesktopHeader({ title }: DesktopHeaderProps) {
         </form>
         <button className="p-2 text-white relative">
           <i className="ri-notification-3-line text-xl"></i>
-          <span className="absolute top-1 right-1 w-2 h-2 bg-[#E50914] rounded-full"></span>
+          <span className="absolute top-1 right-1 w-2 h-2 bg-[#FFC107] rounded-full"></span>
         </button>
       </div>
     </div>
