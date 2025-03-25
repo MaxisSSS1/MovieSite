@@ -35,7 +35,7 @@ export default function Sidebar() {
   return (
     <aside className="hidden md:flex flex-col w-64 bg-[#1E1E1E] p-4">
       <div className="flex items-center mb-8">
-        <div className="text-[#E50914] font-poppins font-bold text-2xl">Movie<span className="text-[#3CAEFF]">Mood</span></div>
+        <div className="text-[#3071FF] font-poppins font-bold text-2xl">Movie<span className="text-[#FFC107]">Mood</span></div>
       </div>
       
       <nav className="flex-1">

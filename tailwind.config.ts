@@ -44,6 +44,21 @@ export default {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
+        // Custom MovieMood colors
+        brand: {
+          blue: "var(--primary-blue)",
+          "blue-hover": "var(--primary-blue-hover)",
+          yellow: "var(--primary-yellow)",
+          "yellow-hover": "var(--primary-yellow-hover)",
+        },
+        dark: {
+          DEFAULT: "var(--background-dark)",
+          card: "var(--background-card)",
+          element: "var(--background-element)",
+        },
+        text: {
+          muted: "var(--text-muted)",
+        },
         chart: {
           "1": "hsl(var(--chart-1))",
           "2": "hsl(var(--chart-2))",

@@ -8,9 +8,9 @@ interface MobileHeaderProps {
 export function MobileHeader({ title = "MovieMood" }: MobileHeaderProps) {
   return (
     <header className="md:hidden bg-[#1E1E1E] sticky top-0 z-40 p-4 flex items-center justify-between">
-      <div className="text-[#E50914] font-poppins font-bold text-xl">
+      <div className="text-[#3071FF] font-poppins font-bold text-xl">
         {title === "MovieMood" ? (
-          <>Movie<span className="text-[#3CAEFF]">Mood</span></>
+          <>Movie<span className="text-[#FFC107]">Mood</span></>
         ) : (
           title
         )}

@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary-blue: #3071FF;
+  --primary-blue-hover: rgba(48, 113, 255, 0.9);
+  --primary-yellow: #FFC107;
+  --primary-yellow-hover: rgba(255, 193, 7, 0.9);
+  --background-dark: #121212;
+  --background-card: #1E1E1E;
+  --background-element: #282828;
+  --text-muted: #B3B3B3;
+}
+
 @layer base {
   * {
     @apply border-border;
@@ -9,5 +20,6 @@
 
   body {
     @apply font-sans antialiased bg-background text-foreground;
+    background-color: var(--background-dark);
   }
 }
