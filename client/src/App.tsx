@@ -13,6 +13,8 @@ import SharedViewings from "@/pages/SharedViewings";
 import Achievements from "@/pages/Achievements";
 import Profile from "@/pages/Profile";
 import MovieDetails from "@/pages/MovieDetails";
+import Register from "@/pages/Register";
+import Login from "@/pages/Login";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -26,6 +28,8 @@ function Router() {
       <Route path="/achievements" component={Achievements} />
       <Route path="/profile" component={Profile} />
       <Route path="/movie/:id" component={MovieDetails} />
+      <Route path="/register" component={Register} />
+      <Route path="/login" component={Login} />
       <Route component={NotFound} />
     </Switch>
   );

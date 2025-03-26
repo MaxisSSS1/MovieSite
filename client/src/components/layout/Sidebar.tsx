@@ -13,16 +13,14 @@ interface NavItemProps {
 const NavItem = ({ href, icon, children, isActive }: NavItemProps) => {
   return (
     <li>
-      <Link href={href}>
-        <a className={cn(
-          "flex items-center py-2 px-4 rounded transition duration-200",
-          isActive 
-            ? "bg-[#282828] text-white" 
-            : "text-[#B3B3B3] hover:text-white"
-        )}>
-          <i className={`${icon} mr-3`}></i>
-          <span>{children}</span>
-        </a>
+      <Link href={href} className={cn(
+        "flex items-center py-2 px-4 rounded transition duration-200",
+        isActive 
+          ? "bg-[#282828] text-white" 
+          : "text-[#B3B3B3] hover:text-white"
+      )}>
+        <i className={`${icon} mr-3`}></i>
+        <span>{children}</span>
       </Link>
     </li>
   );
