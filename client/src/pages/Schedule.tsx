@@ -56,6 +56,16 @@ export default function Schedule() {
       });
     }
   });
+
+  useEffect(() => {
+    const url = new URL(window.location.href);
+    const shouldOpenDialog = url.searchParams.get("add") === "true";
+    if (shouldOpenDialog) {
+      setIsAddDialogOpen(true);
+      // Optionally clear it from the URL
+      setLocation("/schedule", { replace: true });
+    }
+  }, []);
   
   // Refetch when selected date changes
   useEffect(() => {

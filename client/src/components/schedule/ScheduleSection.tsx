@@ -101,7 +101,7 @@ export default function ScheduleSection() {
             </div>
           )}
           
-          <Link href={`/schedule/add${location === '/' ? '?redirect=/' : ''}`}>
+          <Link href="/schedule?add=true">
             <a className="block w-full p-3 border border-dashed border-[#282828] rounded-lg text-center text-[#B3B3B3] hover:text-[#3CAEFF] transition-colors">
               <i className="ri-add-line mr-1"></i> Schedule a Movie
             </a>
