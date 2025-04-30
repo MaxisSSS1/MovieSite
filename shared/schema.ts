@@ -83,7 +83,12 @@ export const scheduledViewings = pgTable("scheduled_viewings", {
   participants: integer("participants").array(),
 });
 
-export const insertScheduledViewingSchema = createInsertSchema(scheduledViewings).omit({ 
+export const insertScheduledViewingSchema = createInsertSchema(scheduledViewings, {
+  scheduledFor: z.preprocess(
+    (val) => (typeof val === "string" || val instanceof Date) ? new Date(val) : val,
+    z.date()
+  )
+}).omit({ 
   id: true 
 });
 
